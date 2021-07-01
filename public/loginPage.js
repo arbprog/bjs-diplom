@@ -18,7 +18,7 @@ userForm.registerFormCallback = function (data) {
     ApiConnector.login(data, response => {
         console.log(response);
 
-        if (response.succes) {
+        if (response.success) {
             return location.reload();
         } else {
             return userForm.setRegisterErrorMessage(response.error);
